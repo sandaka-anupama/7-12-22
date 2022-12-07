@@ -1,0 +1,37 @@
+#HAPPY NUMBER OR NOT
+def sumofnumber(n):
+    s=0
+    while(n>0):
+        r=n%10
+        s=s+(r*r)
+        n=n//10
+    return s
+n=int(input('Enter a number:'))
+while(n>9):
+    n=sumofnumber(n)
+if n==1 or n==7:
+    print('Happy number')
+else:
+    print('Not a happy number')
+
+
+output:
+=== RESTART: C:/Users/S ANUPAMA/AppData/Local/Programs/Python/Python311/we.py ==
+Enter a number:13
+Not a happy number
+
+=== RESTART: C:/Users/S ANUPAMA/AppData/Local/Programs/Python/Python311/we.py ==
+Enter a number:13
+Happy number
+
+=== RESTART: C:/Users/S ANUPAMA/AppData/Local/Programs/Python/Python311/we.py ==
+Enter a number:7
+Happy number
+
+=== RESTART: C:/Users/S ANUPAMA/AppData/Local/Programs/Python/Python311/we.py ==
+Enter a number:34
+Not a happy number
+
+=== RESTART: C:/Users/S ANUPAMA/AppData/Local/Programs/Python/Python311/we.py ==
+Enter a number:32
+Happy number
